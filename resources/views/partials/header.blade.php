@@ -9,7 +9,7 @@
     </div>
     <nav>
         <div class="container">
-            <img src="/images/dc-logo.png" alt="">
+            <img src="{{asset('/images/dc-logo.png')}}" alt="">
             <ul>
                 <li><a href="">Characters</a></li>
                 <li><a href="" class="active">Comics</a></li>

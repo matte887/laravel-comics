@@ -26,16 +26,13 @@ header {
   width: 100%;
   height: 150px;
 }
-
 header img {
   height: 80px;
 }
-
 header ul {
   display: flex;
   text-transform: uppercase;
 }
-
 header .header-top {
   width: 100%;
   padding: 0.2rem 0;
@@ -44,41 +41,56 @@ header .header-top {
   background-color: #0c82f3;
   color: white;
 }
-
 header .header-top ul {
   justify-content: flex-end;
 }
-
 header .header-top ul li {
   margin-left: 2rem;
 }
-
 header nav {
   height: 100%;
   display: flex;
   align-items: center;
 }
-
 header nav .container {
   display: flex;
   justify-content: space-between;
 }
-
 header nav .container ul {
   align-items: center;
 }
-
 header nav .container ul li {
   margin: 0 1rem;
   font-weight: bold;
   color: #4a4a4a;
 }
-
 header nav .container ul .active {
   color: #0c82f3;
 }
-
 header nav .container input {
   align-self: center;
 }
 
+.jumbotron {
+  width: 100%;
+  height: 40vh;
+  background-image: url(../images/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron .container {
+  position: relative;
+  height: 100%;
+}
+.jumbotron .current-series {
+  text-transform: uppercase;
+  color: white;
+  background-color: #0c82f3;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 50%);
+}
