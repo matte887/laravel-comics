@@ -12,8 +12,8 @@
             <img src="{{asset('/images/dc-logo.png')}}" alt="">
             <ul>
                 <li><a href="">Characters</a></li>
-                <li><a href="" class="active">Comics</a></li>
-                <li><a href="">Movies</a></li>
+                <li><a href="{{route('comics')}}" class="active">Comics</a></li>
+                <li><a href="{{route('movies')}}">Movies</a></li>
                 <li><a href="">TV</a></li>
                 <li><a href="">Games</a></li>
                 <li><a href="">Collectibles</a></li>

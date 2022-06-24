@@ -245,3 +245,8 @@ header nav .container input {
   height: 50px;
   margin: 0 0.5rem;
 }
+
+.movies .container {
+  margin: 5rem auto;
+  text-align: center;
+}
