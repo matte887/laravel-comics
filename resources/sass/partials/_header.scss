@@ -1,0 +1,49 @@
+header {
+    width: 100%;
+    height: 150px;
+    img {
+        height: 80px;
+    }
+    ul {
+        display: flex;
+        text-transform: uppercase;
+    }
+    .header-top {
+        width: 100%;
+        padding: .2rem 0;
+        font-size: .7rem;
+        font-weight: bold;
+        background-color: $main-brand-color;
+        color: white;
+        ul {
+            justify-content: flex-end;
+            li {
+                margin-left: 2rem;
+            }
+        }
+    }
+    nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            ul {
+                align-items: center;
+                li {
+                    margin: 0 1rem;
+                    font-weight: bold;
+                    color: $grey-text;
+                }
+                .active {
+                    color: $main-brand-color;
+                }
+            } 
+            input {
+                align-self: center;
+            }
+        }
+        
+    }
+}
