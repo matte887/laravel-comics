@@ -1,0 +1,30 @@
+.main-content {
+    .comics {
+        background-color: $grey-background;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 4rem;
+        }
+
+        .comic {
+            width: calc(100% / 6 - 1rem);
+            margin: 1rem 0;
+
+            .img-container {
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+            }
+        }
+
+        h4 {
+            text-transform: uppercase;
+            color: white;
+            margin-top: 1rem;
+            font-weight: initial;
+        }
+    }
+}
