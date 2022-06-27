@@ -13,11 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/comics', function () {
     // dd($comics);
-    return view('home', config('comics'));
+    return view('comics', config('comics'));
 })->name('comics');
 
-Route::get('movies', function () {
+Route::get('/movies', function () {
     return view('movies');
 })->name('movies');
+
+Route::get('/comics/1', function() {
+    /* Questo è un metodo alternativo a quello fatto sopra. 
+    In questo modo è possibile aggiungere in data altri dati che potrebbero servire oltre all'array dei comics. */
+
+    $comics = config('comics');
+    $data = [
+        'comics' => $comics
+    ];
+    return view('single-movie', $data);
+})->name('single-movie');

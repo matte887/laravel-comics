@@ -4,8 +4,10 @@
     DC Comics
 @endsection
 
+
 @section('main-content')
-    <div class="main-content">
+@include('components.blue-label')
+<div class="main-content">
         <div class="comics">
             <div class="container">
                 @foreach ($comics as $comic)
@@ -24,26 +26,26 @@
         <div class="blue-nav">
             <div class="container">
                 <a href="" class="blue-nav__card">
-                  <img src="{{asset('/images/buy-comics-digital-comics.png')}}" alt="" />
-                  <span>Digital comics</span>
+                    <img src="{{ asset('/images/buy-comics-digital-comics.png') }}" alt="" />
+                    <span>Digital comics</span>
                 </a>
                 <a href="" class="blue-nav__card">
-                  <img src="{{asset('/images/buy-comics-merchandise.png')}}" alt="" />
-                  <span>DC merchandise</span>
+                    <img src="{{ asset('/images/buy-comics-merchandise.png') }}" alt="" />
+                    <span>DC merchandise</span>
                 </a>
                 <a href="" class="blue-nav__card">
-                  <img src="{{asset('/images/buy-comics-subscriptions.png')}}" alt="" />
-                  <span>Subscription</span>
+                    <img src="{{ asset('/images/buy-comics-subscriptions.png') }}" alt="" />
+                    <span>Subscription</span>
                 </a>
                 <a href="" class="blue-nav__card">
-                  <img src="{{asset('/images/buy-comics-shop-locator.png')}}" alt="" />
-                  <span>Comic shop locator</span>
+                    <img src="{{ asset('/images/buy-comics-shop-locator.png') }}" alt="" />
+                    <span>Comic shop locator</span>
                 </a>
                 <a href="" class="blue-nav__card">
-                  <img src="{{asset('/images/buy-dc-power-visa.svg')}}" alt="" />
-                  <span>DC power Visa</span>
+                    <img src="{{ asset('/images/buy-dc-power-visa.svg') }}" alt="" />
+                    <span>DC power Visa</span>
                 </a>
-              </div>
+            </div>
         </div>
     </div>
 @endsection

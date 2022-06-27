@@ -85,22 +85,6 @@ header nav .container input {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.jumbotron .container {
-  position: relative;
-  height: 100%;
-}
-.jumbotron .current-series {
-  text-transform: uppercase;
-  color: white;
-  background-color: #0c82f3;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 50%);
-}
 
 .main-content .comics {
   background-color: #1c1c1c;
@@ -249,4 +233,21 @@ header nav .container input {
 .movies .container {
   margin: 5rem auto;
   text-align: center;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+.container .current-series {
+  text-transform: uppercase;
+  color: white;
+  background-color: #0c82f3;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 50%);
 }
