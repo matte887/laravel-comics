@@ -32,6 +32,11 @@ Route::get('/comics/{id}', function($id) {
     // ricorda che tu hai modificato l'array in config dandogli un nome!
     $current_comic = $open_comics->where('id', $id)->first();
     // dd($current_comic);
+
+    if (!$current_comic) {
+        return abort(404);
+    }
+
     $data = [
         'comics' => $current_comic
     ];
