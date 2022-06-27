@@ -72,6 +72,44 @@
                 }
             }
         }
+    }
+
+    .background-grey {
+        background-color: #f6f6f6;
+        .container {
+            display: flex;
+            .bottom-left,
+            .bottom-right {
+                width: 50%;
+                padding: 2rem;
+            }
+    
+            .text-blue {
+                color: $text-blue;
+            }
+            .text-brand-color {
+                color: $main-brand-color;
+            }
+
+            h3 {
+                padding: 1rem 0;
+                font-size: 1.2rem;
+                border-bottom: 1px solid lightgray;
+            }
+
+            .my {
+                margin: 1rem 0;
+            }
+
+            .br::after {
+                content: '';
+                display: block;
+                background-color: lightgray;
+                width: 100%;
+                height: 1px;
+                margin-top: 1rem;
+            }
+        }
 
     }
 }

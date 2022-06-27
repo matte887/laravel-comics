@@ -318,3 +318,36 @@ header nav .container input {
 .single-movie .container .comic-content .green-bar .green-bar-right {
   padding: 1rem;
 }
+.single-movie .background-grey {
+  background-color: #f6f6f6;
+}
+.single-movie .background-grey .container {
+  display: flex;
+}
+.single-movie .background-grey .container .bottom-left,
+.single-movie .background-grey .container .bottom-right {
+  width: 50%;
+  padding: 2rem;
+}
+.single-movie .background-grey .container .text-blue {
+  color: #023f5c;
+}
+.single-movie .background-grey .container .text-brand-color {
+  color: #0c82f3;
+}
+.single-movie .background-grey .container h3 {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  border-bottom: 1px solid lightgray;
+}
+.single-movie .background-grey .container .my {
+  margin: 1rem 0;
+}
+.single-movie .background-grey .container .br::after {
+  content: "";
+  display: block;
+  background-color: lightgray;
+  width: 100%;
+  height: 1px;
+  margin-top: 1rem;
+}
