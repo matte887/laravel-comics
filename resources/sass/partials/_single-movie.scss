@@ -1,0 +1,75 @@
+.single-movie::before {
+    content: "";
+    width: 100%;
+    height: 65px;
+    display: block;
+    background-color: $main-brand-color;
+}
+
+.single-movie {
+    .container {
+        position: relative;
+
+        .comic-cover {
+            top: -260px;
+            width: 12%;
+            border: 1px solid white;
+            position: absolute;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            color: $text-blue;
+            font-size: 1.7rem;
+        }
+        
+        .comic-content {
+            padding-top: 5rem;
+            display: flex;
+            
+            &-left, &-right {
+                padding: 1rem;
+            }
+            
+            &-left {
+                p {
+                    margin-top: 2rem;
+                }
+            }
+
+            &-right {
+                width: 40%;
+                p {
+                    text-align: right;
+                    text-transform: uppercase;
+                    color: $grey-text;
+                    font-weight: bold;
+                }
+            }
+
+            .green-bar {
+                background-color: $available-green;
+                display: flex;
+                color: white;
+                justify-content: space-between;
+                border-bottom: 1px solid darkgreen;
+    
+                .green-bar-left {
+                    padding: 1rem;
+                    flex-grow: 1;
+                    display: flex;
+                    justify-content: space-between;
+                    border-right: 1px solid darkgreen;
+                    span:last-child {
+                        padding-right: 1rem;
+                    }
+                }
+    
+                .green-bar-right {
+                    padding: 1rem;
+                }
+            }
+        }
+
+    }
+}

@@ -251,3 +251,65 @@ header nav .container input {
   left: 0;
   transform: translate(0, 50%);
 }
+
+.single-movie::before {
+  content: "";
+  width: 100%;
+  height: 65px;
+  display: block;
+  background-color: #0c82f3;
+}
+
+.single-movie .container {
+  position: relative;
+}
+.single-movie .container .comic-cover {
+  top: -260px;
+  width: 12%;
+  border: 1px solid white;
+  position: absolute;
+}
+.single-movie .container h1 {
+  text-transform: uppercase;
+  color: #023f5c;
+  font-size: 1.7rem;
+}
+.single-movie .container .comic-content {
+  padding-top: 5rem;
+  display: flex;
+}
+.single-movie .container .comic-content-left, .single-movie .container .comic-content-right {
+  padding: 1rem;
+}
+.single-movie .container .comic-content-left p {
+  margin-top: 2rem;
+}
+.single-movie .container .comic-content-right {
+  width: 40%;
+}
+.single-movie .container .comic-content-right p {
+  text-align: right;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+.single-movie .container .comic-content .green-bar {
+  background-color: #57ba62;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  border-bottom: 1px solid darkgreen;
+}
+.single-movie .container .comic-content .green-bar .green-bar-left {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid darkgreen;
+}
+.single-movie .container .comic-content .green-bar .green-bar-left span:last-child {
+  padding-right: 1rem;
+}
+.single-movie .container .comic-content .green-bar .green-bar-right {
+  padding: 1rem;
+}
