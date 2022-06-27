@@ -10,17 +10,46 @@
     <nav>
         <div class="container">
             <img src="{{asset('/images/dc-logo.png')}}" alt="">
+
             <ul>
-                <li><a href="">Characters</a></li>
-                <li><a href="{{route('comics')}}" class="active">Comics</a></li>
-                <li><a href="{{route('movies')}}">Movies</a></li>
-                <li><a href="">TV</a></li>
-                <li><a href="">Games</a></li>
-                <li><a href="">Collectibles</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">Fans</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Shop</a></li>
+                <li>
+                    <a href="{{route('comics')}}" class="{{ Request::route()->getName()
+                     === 'characters' ? 'active' : '' }}">Characters</a>
+                </li>
+                <li>
+                    <a href="{{route('comics')}}" class="{{ Request::route()->getName()
+                     === 'comics' ? 'active' : '' }}">Comics</a></li>
+                <li>
+                    <a href="{{route('movies')}}" class="{{ Request::route()->getName()
+                     === 'movies' ? 'active' : '' }}">Movies</a></li>
+                <li>
+                    <a href="{{route('comics')}}" class="{{ Request::route()->getName()
+                     === 'tv' ? 'active' : '' }}">TV</a>
+                </li>
+                <li>
+                    <a href="{{route('comics')}}" class="{{ Request::route()->getName()
+                     === 'games' ? 'active' : '' }}">Games</a>
+                </li>
+                <li>
+                    <a href="{{route('comics')}}" class="{{ Request::route()->getName()
+                     === 'collectibles' ? 'active' : '' }}">Collectibles</a>
+                </li>
+                <li>
+                    <a href="{{route('comics')}}" class="{{ Request::route()->getName()
+                     === 'videos' ? 'active' : '' }}">Videos</a>
+                </li>
+                <li>
+                    <a href="{{route('comics')}}" class="{{ Request::route()->getName()
+                     === 'fans' ? 'active' : '' }}">Fans</a>
+                </li>
+                <li>
+                    <a href="{{route('comics')}}" class="{{ Request::route()->getName()
+                     === 'news' ? 'active' : '' }}">News</a>
+                </li>
+                <li>
+                    <a href="{{route('comics')}}" class="{{ Request::route()->getName()
+                     === 'shop' ? 'active' : '' }}">Shop</a>
+                </li>
             </ul>
             <input type="text" placeholder="Search">
         </div>

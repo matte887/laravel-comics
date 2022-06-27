@@ -62,6 +62,7 @@ header nav {
 header nav .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header nav .container ul {
   align-items: center;
@@ -280,6 +281,9 @@ header nav .container input {
 }
 .single-movie .container .comic-content-left, .single-movie .container .comic-content-right {
   padding: 1rem;
+}
+.single-movie .container .comic-content-left {
+  width: 100%;
 }
 .single-movie .container .comic-content-left p {
   margin-top: 2rem;

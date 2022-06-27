@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('title')
-    DC Comics | Titolo comic
+    DC Comics | {{ $comics['title'] }}
 @endsection
 
 @section('main-content')
