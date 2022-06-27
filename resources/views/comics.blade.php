@@ -11,7 +11,7 @@
         <div class="comics">
             <div class="container">
                 @foreach ($comics as $comic)
-                    <a href="" class="comic">
+                    <a href="{{ route('single-movie', ['id' => $comic['id']]) }}" class="comic">
                         <div class="img-container">
                             <img src="{{ $comic['thumb'] }}" alt="">
                         </div>
