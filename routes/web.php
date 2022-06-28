@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/comics', function () {
+Route::get('/', function () {
     // dd($comics);
     return view('comics', config('comics'));
 })->name('comics');
@@ -22,7 +22,7 @@ Route::get('/movies', function () {
     return view('movies');
 })->name('movies');
 
-Route::get('/comics/{id}', function($id) {
+Route::get('/{id}', function($id) {
     /* Questo è un metodo alternativo a quello fatto sopra. 
     In questo modo è possibile aggiungere in data altri dati che potrebbero servire oltre all'array dei comics. In più c'è collect per selezionare ed inviare solo il comic corrente. */
 
